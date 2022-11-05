@@ -106,6 +106,8 @@ future & development          11%            110000000
 
 ======================================================================================================================
 
+<img width="1091" alt="Screenshot 2022-11-05 at 3 43 35 PM" src="https://user-images.githubusercontent.com/99618142/200118274-7f55bbdb-efce-44f9-b79f-8176fb76e538.png">
+
 
 1.According to Tokonomics, it should be able to have a private sale. Research what is the best private sale method and use it. (Private sale
 The price of each token is equivalent to 10 dollars. Minimum cap and maximum cap should be considered for it. After that, the token sending step will start automatically and the tokens will be locked based on the information in Tokonomics)
