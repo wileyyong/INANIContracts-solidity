@@ -53,7 +53,9 @@ First, create INA token according to the following features and deploy it on Pol
 ## tokenomics
 
 name of the token: INANI token
+
 Symbol of the token: INA 
+
 TotalSupply: 1,000,000,000
 
 <img width="1091" alt="Screenshot 2022-11-05 at 3 43 35 PM" src="https://user-images.githubusercontent.com/99618142/200118274-7f55bbdb-efce-44f9-b79f-8176fb76e538.png">
