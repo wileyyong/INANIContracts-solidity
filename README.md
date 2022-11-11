@@ -90,7 +90,7 @@ Exactly, you can consider a simple formula for that, the sum of these points is 
 Different users can buy and sell a part of a creator's credit with the INA token (like company shares) within this platform.
 It should also be a smart contract where the manufacturer can mint his own NFT, maybe there is no need to buy and sell it.
 
-Suppose that there are several parts on each user's page that are automatically completed by the platform and are visible like Instagram: 1. Followers 2. Followings 3. Number of nft. Total price of NFTs minted by this person. Number of investors. The number of views and etc … 
+Suppose that there are several parts on each user's page that are automatically completed by the platform and are visible like Instagram: 1. Followers 2. Followings 3. Number of nft. Total price of NFTs minted by this person. Number of investors. The number of views, comments, shares and etc … 
 Finally, a default score can be considered for each of these factors, and the higher or lower their number, the higher or lower it will affect the price of this person's credit shares. The purpose of this task is for people to buy this person's credit shares.
 
 question: Suppose I'm a creator and based on Calculations I got 1000000 stocks
