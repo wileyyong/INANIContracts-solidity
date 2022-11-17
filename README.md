@@ -78,7 +78,7 @@ after that check this repo and see how does it work:
 You can use the codes of similar projects to show the best performance.
 
 
-# 2. NFT Contract and Digitalization
+# 2. Creator credit
 
 In this Task we will have many creators. Let’s say vishal is a video creator. He has created many videos and among those videos some converted into nft. vishal also has some media coverage and news publications. And he has like 4M followers. 
 Based on these many factors we are going to set a price of his stocks. Let’s assume price is 5INA token per stock. Now his followers or other our users can buy this stocks by paying 5INA token to vishal. Let’s say parsa buy 20 vishal’s stocks by paying 100 INA. Parsa can sell 100 stocks or fractions of it in the marketplace. 
