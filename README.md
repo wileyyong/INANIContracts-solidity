@@ -62,36 +62,33 @@ TotalSupply: 1,000,000,000
 
 
 1.According to Tokonomics, it should be able to have a private sale. Research what is the best private sale method and use it. (Private sale
-The price of each token is equivalent to 10 dollars. Minimum cap and maximum cap should be considered for it. After that, the token sending step will start automatically and the tokens will be locked based on the information in Tokonomics)
-2.Also, the token allocation specified in Tokenomics in the smart contract must be observed (tokens should be deposited in Tokenomics for wallet addresses of different parts)
-3.Tokens sent to Wallet Funder/Team will be locked for one year and after one year it is possible to withdraw and transfer them.
-
-at first please read this article for clarification of this process :
-https://medium.com/hackernoon/token-vesting-process-why-is-this-a-great-idea-34933e9e8bc5
-
-after that check this repo and see how does it work:
-1- https://github.com/binodnp/vesting-schedule
-2- https://github.com/sirin-labs/crowdsale-smart-contract/tree/master/contracts
-3- https://github.com/TeraBlock/TBC-vesting-contracts
-
-
-You can use the codes of similar projects to show the best performance.
+The price of each token is equivalent to 0.1 dollars. Minimum cap and maximum cap should be considered for it. After that, the token sending step will start automatically and the tokens will be locked based on the information in Tokonomics)
+2.The purpose of private sale is to fundraising from investors. It means that based on the considered token price (0.1 $), investors can buy their tokens with eth, usdt and matic. (must be defined in the smart contract)
+3.The fundraised (with eth, usdt and matic) must be transferred to a specific wallet.
+4.The goal of this private sale is to reach $15 million (or Eth, usdt or matic equivalent) and once this amount is reached the private sale will be completed.
+5.The maximum duration of a private sale is 6 months and the owner can stop it at any time.
+6.Tokens intended for Funder/Team (based on Tokenomics) are sent to a specific wallet and are locked for one year, and after one year it is possible to withdraw and transfer them.
+7.It should be possible for the owner to lock the tokens of a wallet (to prevent whales from controlling them).
+8.After the completion of the private sale, the tokens will be ready to be listed in centralized and decentralized exchanges.
 
 
 # 2. Creator credit
 
 In this Task we will have many creators. Let’s say vishal is a video creator. He has created many videos and among those videos some converted into nft. vishal also has some media coverage and news publications. And he has like 4M followers. 
 Based on these many factors we are going to set a price of his stocks. Let’s assume price is 5INA token per stock. Now his followers or other our users can buy this stocks by paying 5INA token to vishal. Let’s say parsa buy 20 vishal’s stocks by paying 100 INA. Parsa can sell 100 stocks or fractions of it in the marketplace. 
-Here eack creator will have his own stocks. Stock price will vary from creator to creator.  Creator is the company and they will have their own shares that you can buy.
+Here each creator will have his own stocks. Stock price will vary from creator to creator.  Creator is the company and they will have their own shares that you can buy.
 
 ## Further Details
-suppose there is a dashboard like opensea collection nft dashboard page, in that dashboard there is information like number of followers, number of nfts, likes and other information related to that person, any of The parameters include a score, and based on this score, a price is determined for that person's credit, which can be considered equivalent to a number of INA tokens, now suppose that this person's credit can be bought and sold like the shares of a company.
-Exactly, you can consider a simple formula for that, the sum of these points is equivalent to a certain number of tokens
-Different users can buy and sell a part of a creator's credit with the INA token (like company shares) within this platform.
-It should also be a smart contract where the manufacturer can mint his own NFT, maybe there is no need to buy and sell it.
+Suppose we have a dapp and the goal is to determine credit shares for each user so that he can sell a part of his credit to his other contacts. There are several parts in each user's account, such as: 1. Followers 2. Followers 3. Number of nft 4. Total price of NFT multiplied by this person 5. Number of investors 6. Like 7. Share 8. Comment 9. Number visit and...
+For each of the above factors and parameters, we consider a score and the set of these scores will eventually become a specific number of tokens. For example, a user who has earned 1 million points will finally get 2000 tokens.
+With this default, you should find a connection to determine the price of the users' credit shares. One solution is to multiply the total points by the number of tokens (based on the price of the token in the crypto market) and this way the total price of each person's credit shares is determined.
+(total scores * number of INA token (token price in Ctypro market) = total credit shares)
 
-Suppose that there are several parts on each user's page that are automatically completed by the platform and are visible like Instagram: 1. Followers 2. Followings 3. Number of nft. Total price of NFTs minted by this person. Number of investors. The number of views, comments, shares and etc … 
-Finally, a default score can be considered for each of these factors, and the higher or lower their number, the higher or lower it will affect the price of this person's credit shares. The purpose of this task is for people to buy this person's credit shares.
+Now, every user can sell a part of his credit shares in a marketplace and in this way sell his credit to his audience. The audience and fans of this creator can buy and sell a part of this person's credit with the inan token in the trading market and profit or lose from the rise and fall of this person's credit price.
+
+Different users can buy and sell a part of a creator's credit with the INA token (like company shares) within this platform.
+It should also be a smart contract where the manufacturer can mint his own NFT, maybe there is no need to buy and sell it. (NFT is only use for mint videos and does not have the ability to buy and sell, any user/creator can mint his videos in the form of NFT and the number of NFTs of creators is considered a point that increases his credibility.)
+
 
 Let me explain more simply
 You do not need to develop NFT fraction stocks at all
@@ -103,12 +100,9 @@ For example, 1 million points equals 2000 tokens
 Now we want to determine the credit price of each person, this will be a formula
 Total points (1 million) * number of tokens (2000)
 The total price of one's credit depends on the price of the token in the market
-Now each user can sell a part of his credit and other users can share in the profit from buying and selling it
+Now each user can sell a part of his credit and other users can share in the profit from buying and selling it.
+
 
 All smart contracts must be developed from the user side (for mint nft as a video) and also for other users to buy credit, each user has a profile for himself that can sell a part of his credit shares.
 
-similar projects: https://docs.mirror.finance
-
-https://www.morpher.com/docs/morpher_whitepaper.pdf
-https://github.com/Morpher-io/MorpherProtocol/tree/feature/DEV-38-accountmigration
 
