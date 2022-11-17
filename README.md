@@ -63,12 +63,19 @@ TotalSupply: 1,000,000,000
 
 1.According to Tokonomics, it should be able to have a private sale. Research what is the best private sale method and use it. (Private sale
 The price of each token is equivalent to 0.1 dollars. Minimum cap and maximum cap should be considered for it. After that, the token sending step will start automatically and the tokens will be locked based on the information in Tokonomics)
+
 2.The purpose of private sale is to fundraising from investors. It means that based on the considered token price (0.1 $), investors can buy their tokens with eth, usdt and matic. (must be defined in the smart contract)
+
 3.The fundraised (with eth, usdt and matic) must be transferred to a specific wallet.
+
 4.The goal of this private sale is to reach $15 million (or Eth, usdt or matic equivalent) and once this amount is reached the private sale will be completed.
+
 5.The maximum duration of a private sale is 6 months and the owner can stop it at any time.
+
 6.Tokens intended for Funder/Team (based on Tokenomics) are sent to a specific wallet and are locked for one year, and after one year it is possible to withdraw and transfer them.
+
 7.It should be possible for the owner to lock the tokens of a wallet (to prevent whales from controlling them).
+
 8.After the completion of the private sale, the tokens will be ready to be listed in centralized and decentralized exchanges.
 
 
