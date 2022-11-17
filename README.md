@@ -93,10 +93,17 @@ It should also be a smart contract where the manufacturer can mint his own NFT, 
 Suppose that there are several parts on each user's page that are automatically completed by the platform and are visible like Instagram: 1. Followers 2. Followings 3. Number of nft. Total price of NFTs minted by this person. Number of investors. The number of views, comments, shares and etc … 
 Finally, a default score can be considered for each of these factors, and the higher or lower their number, the higher or lower it will affect the price of this person's credit shares. The purpose of this task is for people to buy this person's credit shares.
 
-question: Suppose I'm a creator and based on Calculations I got 1000000 stocks
-So one token will be 1 ina token right ? Or is it 0.5 token
-
-answer: Here we can decide, it is our hand, for example, every 1000 points average will be 2 tokens, so a person who has 1000000 points will get 2000 INA token and based on this number of tokens and the price of the INA token in the market, the total price of his credit shares is determined, now other users can buy and sell his credit.
+Let me explain more simply
+You do not need to develop NFT fraction stocks at all
+There will be develop only one separate contract for mint video, images, etc in NFT format
+The principle of work is related to the development of people's credit shares
+Suppose that we consider a hypothetical score for a number of parameters such as likes and comments, and the more followers, likes, and comments, the higher this score will be.
+Now we convert these points
+For example, 1 million points equals 2000 tokens
+Now we want to determine the credit price of each person, this will be a formula
+Total points (1 million) * number of tokens (2000)
+The total price of one's credit depends on the price of the token in the market
+Now each user can sell a part of his credit and other users can share in the profit from buying and selling it
 
 All smart contracts must be developed from the user side (for mint nft as a video) and also for other users to buy credit, each user has a profile for himself that can sell a part of his credit shares.
 
