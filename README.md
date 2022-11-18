@@ -58,17 +58,17 @@ Symbol of the token: INA
 
 TotalSupply: 1,000,000,000
 
-<img width="1091" alt="Screenshot 2022-11-05 at 3 43 35 PM" src="https://user-images.githubusercontent.com/99618142/200118274-7f55bbdb-efce-44f9-b79f-8176fb76e538.png">
+<img width="984" alt="Screen Shot 2022-11-18 at 8 49 37 AM" src="https://user-images.githubusercontent.com/99618142/202619503-abd846cf-bf44-440b-8e04-90a09fc9a875.png">
 
 
-1.According to Tokonomics, it should be able to have a private sale. Research what is the best private sale method and use it. (Private sale
-The price of each token is equivalent to 0.1 dollars. Minimum cap and maximum cap should be considered for it. After that, the token sending step will start automatically and the tokens will be locked based on the information in Tokonomics)
 
-2.The purpose of private sale is to fundraising from investors. It means that based on the considered token price (0.1 $), investors can buy their tokens with eth, usdt and matic. (must be defined in the smart contract)
+1.According to Tokonomics, it should be able to have a private sale. Research what is the best private sale method and use it. (in Private sale stage The price of each token is equivalent to 0.16 dollars. Minimum cap and maximum cap should be considered for it. After that, the token sending step will start automatically)
+
+2.The purpose of private sale is to fundraising from investors. It means that based on the considered token price (0.16 $), investors can buy their tokens with eth, usdt and matic. (must be defined in the smart contract)
 
 3.The fundraised (with eth, usdt and matic) must be transferred to a specific wallet.
 
-4.The goal of this private sale is to reach $15 million (or Eth, usdt or matic equivalent) and once this amount is reached the private sale will be completed.
+4.The goal of this private sale is to reach 15 million dollars (or equivalent Eth, usdt or matic) and once this amount is reached the private sale will be completed.
 
 5.The maximum duration of a private sale is 6 months and the owner can stop it at any time.
 
