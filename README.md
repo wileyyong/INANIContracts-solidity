@@ -87,7 +87,7 @@ Here each creator will have his own stocks. Stock price will vary from creator t
 
 ## Further Details
 Suppose we have a dapp and the goal is to determine credit shares for each user so that he can sell a part of his credit to his other contacts. There are several parts in each user's account, such as: 1. Followers 2. Following 3. Number of nft 4. Total price of NFT multiplied by this person 5. Number of investors 6. Like 7. Share 8. Comment 9. Number visit and...
-For each of the above factors and parameters, we consider a score and the set of these scores will eventually become a specific number of tokens. For example, a user who has earned 1 million points will finally get 2000 tokens.
+For each of the above factors and parameters, we consider a score and the set of these scores will eventually become a specific number of INA tokens. For example, a user who has earned 1 million points will finally get 2000 INA tokens.
 With this default, you should find a connection to determine the price of the users' credit shares. One solution is to multiply the total points by the number of tokens (based on the price of the token in the crypto market) and this way the total price of each person's credit shares is determined.
 (total scores * number of INA token (token price in Ctypro market) = total credit shares)
 
