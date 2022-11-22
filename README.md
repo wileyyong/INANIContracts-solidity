@@ -94,8 +94,11 @@ Each user's points will be determined based on certain parameters on the platfor
 You can consider the formula that an increase in the number of specified parameters is equal to a score (score / metric value) and vice versa.
 
 +1 followers = +1 score/points
+
 +1 following = +1 score/points
+
 -1 followers = -1 score/points
+
 .
 .
 .
