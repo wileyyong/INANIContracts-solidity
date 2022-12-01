@@ -105,9 +105,9 @@ You can consider the formula that an increase in the number of specified paramet
 
 Each user has zero points (points / metric value) when he enters the platform, and his points increase or decrease with each action. For example, if a person is added to the number of followers, a number will be added to the number of points. If his video NFTs  is liked, one point will be added and if he receives a comment, one point will be added to it and etc. Also, if someone unfollows him, one point will be deducted from him and...
 
-These points are finally converted into a certain amount of INA tokens (which is different for each user) and these INA  tokens are deposited into a liquidity pool, and based on the price of the number of INA  tokens in the liquidity pool, the total amount of each person's credit shares (stock) is determined (100% share of user credit). It can be defined in this way that when the number of points reaches 100, 10 INA tokens are deposited from the token contract to the liquidity pool, and based on the price of each INA token unit in the crypto market (its information is obtained by Oracle), the total price of each person's credit shares is determined.
+These points are finally converted into a certain amount of INA tokens (which is different for each user) and these INA  tokens are deposited into a liquidity pool, and based on the price of the number of INA  tokens in the liquidity pool, the total amount of each person's credit shares (stock) is determined (100% share of user credit). It can be defined in this way that when the number of points reaches 100, 10 INA tokens are deposited from the token contract to the liquidity pool, and based on the price of USDT unit in the crypto market (its information is obtained by Oracle), the total price of each person's credit shares is determined.
 
-Total number of points * token price * number of tokens calculated based on points = total credit price of each user
+Total number of points * USDT token price * number of INA tokens calculated based on points = total credit price of each user
 
 Of course, to optimize this system, you can consider a better formula so that it is easier to calculate the credit share(stock) price.
 
