@@ -81,50 +81,6 @@ TotalSupply: 1,000,000,000
 
 # 2. Creator credit
 
-In this Task we will have many creators. Let’s say BOB is a video creator. He has created many videos and among those videos some converted into nft. BOB also has some media coverage and news publications. And he has like 4M followers. 
-Based on these many factors we are going to set a price of his stocks. Let’s assume price is 5 INA token per stock(shares). Now his followers or other our users can buy this stocks by paying 5 INA token to BOB. Let’s say Parsa buy 20 BOB’s stocks by paying 100 INA. Parsa can sell 100 stocks or fractions of it in the marketplace. 
-Here each creator will have his own stocks. Stock price will vary from creator to creator. Creator is the company and they will have their own shares that you can buy.
 
-## Further Details
-Consider that we have a dapp that works as a social network. Each user receives points based on his performance in this platform and based on the points (scores / metric value) that he gets, he can receive a credit that can sell this credit in the market and other users can buy and sell (trade) his credit.
-In this platform, users have also the role of creators. A user who enters the platform can produce video content, mint it and display it in NFT format on his feed page (these video NFTs are not capable of buying and selling (soulbound token)).
-
-Each user's points will be determined based on certain parameters on the platform. parameters such as the number of followers, the number of followings, the number of likes, the number of comments, the number of video NFTs, the number of shares, the number of video views and etc...
-
-You can consider the formula that an increase in the number of specified parameters is equal to a score (score / metric value) and vice versa.
-
-+1 followers = +1 score/points
-
-+1 following = +1 score/points
-
--1 followers = -1 score/points
-
-.
-.
-.
-
-Each user has zero points (points / metric value) when he enters the platform, and his points increase or decrease with each action. For example, if a person is added to the number of followers, a number will be added to the number of points. If his video NFTs  is liked, one point will be added and if he receives a comment, one point will be added to it and etc. Also, if someone unfollows him, one point will be deducted from him and...
-
-These points are finally converted into a certain amount of INA tokens (which is different for each user) and these INA  tokens are deposited into a liquidity pool, and based on the price of the number of INA  tokens in the liquidity pool, the total amount of each person's credit shares (stock) is determined (100% share of user credit). It can be defined in this way that when the number of points reaches 100, 10 INA tokens are deposited from the token contract to the liquidity pool, and based on the price of USDT unit in the crypto market (its information is obtained by Oracle), the total price of each person's credit shares is determined.
-
-Total number of points * USDT token price * number of INA tokens calculated based on points = total credit price of each user
-
-Of course, to optimize this system, you can consider a better formula so that it is easier to calculate the credit share(stock) price.
-
-In this process, the number of points and the number of tokens received are updated every moment.
-
-There are two ways to calculate these points, on-chain and off-chain.
-In off-chain mode, the points of each user are calculated by the backend, and finally, by emitting the transfer function from the token contract, a specified number of tokens are deposited into the account of a liquidity pool contract, and with the support of this liquidity pool, the price of 100% of the users' credit shares is determined. (like shares of a company)
-
-The second way is that all these calculations are done on-chain and by smart contracts.
-
-The goal is for users to be able to buy and sell a percentage of each other's credits in a market. Each user has a separate marketplace where other users can buy his credit.
-
-1. First, create a smart contract so that each user can mint their videos in NFT format (the purpose of this is to know the owner of the video - it is not possible to buy and sell video NFT)
-2. Design a system where each user can sell a part of his credit shares in his own market and other users can trade his credit shares. This work is both for the benefit of his audience and for the benefit of users who can share in the profit or loss of each influencer. (Hint: you can create a factory contract that creates a separate smart contract for all users and all parameters are completed by the backend or frontend, and then a certain number of tokens are automatically deposited into the liquidity pool and the price of 100% credit shares for each user is specified be)
-3. Create a contract for a market for buying and selling credit shares of users, according to the defined mechanism, each user can sell his credit shares and also buy the credit shares of other users.
-4. Deploy all the contracts on the Polygon test (Mumbai) and write a unit test for the performance of the second part of the technical assessment.
-
-You can change the formula for calculating credit shares for each user. The goal is to identify the creativity and dynamism of your mind in the development process.
 
 
