@@ -97,7 +97,9 @@ Creator Coin is a creator’s fully customizable, branded cryptocurrency that re
 To balance these competing desires and prevent a liquidity crunch caused by fragmentation across unique Creator Coins, an essential part of the design is our use of Token Bonding Curves. Specifically, a smart contract for each Creator Coin acts as an Automated Market Maker providing a counterparty to anyone interested in buying or selling a Creator Coin. This AMM’s behavior is governed by a pricing curve that establishes a functional relationship between the supply of a Creator Coin and its current price.
 
 
+
 ![image](https://user-images.githubusercontent.com/99618142/206382739-7035f9d2-481c-44d9-a742-89de0b9e8c3c.png)
+
 
 For example, when a fan wants to buy one of their favorite creator’s coins, their funds are transferred to the smart contract and a number of coins determined by our pricing curve are minted. And when the fan is ready to sell those coins, they are simply burned and funds are released from the smart contract according to the pricing curve. An important distinction between this Token Bonding Curve and an AMM like Uniswap is that this curve governs the entirety of the Creator Coin supply as opposed to creating a market for the subset of a token that individuals have chosen to include in the exchange pool.
 
@@ -109,7 +111,9 @@ Our example Creator Coin has the symbol CC.
 CC’s value is denominated in USD.
 CC’s pricing curve is a straight line beginning at $0 with a slope that increases price by $2 for every 100 CC minted. That is:
 
+
 ![image](https://user-images.githubusercontent.com/99618142/206421493-2d61f191-f079-4ede-841f-d8ead91f32e1.png)
+
 
 While it may be initially counterintuitive to think of price increasing with quantity from a consumer perspective, keep in mind that this supply curve represents the perspective of our AMM as a producer. The more someone is interested in paying for CC, the more our AMM acting in accordance with this curve will be willing to supply.
 
@@ -122,13 +126,17 @@ With the assumed pricing curve, this moves us to a supply of 100 CC. The purchas
 The same operation effectively happens in reverse whenever we sell CC. If, for instance, we chose to now sell 50 CC, we would walk back down the curve to the point where supply equals 50 CC. The contract would burn the 50 CC supplied by the seller and release the associated liquidity. Specifically, we would now be at a supply of 50 CC, the price of the last CC minted is now $1, the contract would release $75 to the seller, and the remaining liquidity pool would be $25.
 
 
+
 ![image](https://user-images.githubusercontent.com/99618142/206421757-0f477806-6393-4f0a-b035-180bec47b8ed.png)
+
 
 It’s important to note here that a key piece of our pricing curves working well is that there is no fractionalization of the liquidity pool. At all times, the liquidity pool is fully funded in accordance with the pricing curve. All funds used to purchase Creator Coins and all proceeds from sales of Creator Coins come and go directly from the liquidity pool as trades are executed with the automated market maker.
 
 While the simple linear pricing curve is helpful to illustrate functionality, it’s possible to begin designing for an economy with specific properties in mind by modifying the slope at various points along the curve. For I first cohort of creators, we’ve used our understanding of their existing economic interactions to inform a design captured in the following pricing curve.
 
+
 ![image](https://user-images.githubusercontent.com/99618142/206430912-072f1c37-bb35-434c-b399-b3537e99a853.png)
+
 
 
 The initial segment of the curve labeled ‘A’ effectively represents a supply floor. Upon instantiation of a new Creator Coin, we mint the first 50,000 coins with a small amount of liquidity. These coins go to the corresponding creator and ensure that they have the ability to own a large percentage of the Creator Coin supply at all times, with the intention of motivating creators to behave in ways consistent with the long term value of their coin economy. While the continuous liquidity properties of the pricing curve hold for this segment, the price approaches zero very quickly and the associated liquidity pool is small.
@@ -144,16 +152,22 @@ It is important to note here that alongside the design of the supply curve, a ke
 
 ##Soulbound NFT
 
+
 There will be a smart contract so that each user can mint their videos in NFT format (the purpose of this is to know the owner of the video - it is not possible to buy and sell video NFT - Note that these NFTs do not have the ability to buy and sell(Soulbound NFT))
+
 
 ==================================================================================================================================================
 
 
+
 ##Concepts:
+
 
 Token Bonding Curves: A token bonding curve (TBC) is a pricing curve that establishes a functional relationship between the supply of a Coin and its current price. 
 
+
 Genesis Coins: The first coins minted for a given coin. These coins go to the corresponding creator and ensure that they have the ability to own a large percentage of their Coin supply at all times, with the intention of motivating creators to behave in ways consistent with the long term value of their Coin economy.
+
 
 
 Flow Controls: Flow controls govern the amount of coins that can be 1) converted (to $ّINA) and 2) transferred (to another user, transferring to a creator is excluded) after purchase. There are no flow controls on a fan sending a creator's coins to the creator.
@@ -161,7 +175,9 @@ Flow Controls: Flow controls govern the amount of coins that can be 1) converted
 
 ==================================================================================================================================================
 
+
 ##Request items:
+
 
 1.Develop a token factory smart contract that creates a unique token for each user by receiving the symbol token name and the user's wallet address.
 
