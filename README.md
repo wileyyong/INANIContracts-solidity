@@ -46,7 +46,7 @@ Typechain: a TypeScript blinders for Ethereum smart contracts
 
 # Instructions
 
-# 1. Token
+# 1. Token (optional)
 
 First, create INA token according to the following features and deploy it on Polygon's testnet network.
 
@@ -79,8 +79,74 @@ TotalSupply: 1,000,000,000
 8.After the completion of the private sale, the tokens will be ready to be listed in centralized and decentralized exchanges.
 
 
-# 2. Creator credit
+# 2. Creator coin
+A social token is a token and virtual economy that revolves around a creator or community. An influencer can create their own social token that fans can then purchase, win, or earn.
+
+the goal of this part of technical assesment is accelerate economic interactions between creators and fans, while ensuring that the value that emerges from those interactions accrues to the community participants in a way that is consistent with the creator’s preferences. 
+
+in this part smart contracts allow Creators to define and manage their own economies.
+
+##Creator Coins
+
+Creator Coin is a creator’s fully customizable, branded cryptocurrency that represents their unique digital brand. I have designed this system to balance two seemingly contradictory beliefs:
+
+1) Creator economies should be driven by unique currencies built around individual creators and their communities
+
+2) A single currency across all creators would ensure the largest possible liquidity pool for the entire network and best establish a new coin as a usable currency
+
+To balance these competing desires and prevent a liquidity crunch caused by fragmentation across unique Creator Coins, an essential part of the design is our use of Token Bonding Curves. Specifically, a smart contract for each Creator Coin acts as an Automated Market Maker providing a counterparty to anyone interested in buying or selling a Creator Coin. This AMM’s behavior is governed by a pricing curve that establishes a functional relationship between the supply of a Creator Coin and its current price.
 
 
+![image](https://user-images.githubusercontent.com/99618142/206382739-7035f9d2-481c-44d9-a742-89de0b9e8c3c.png)
+
+For example, when a fan wants to buy one of their favorite creator’s coins, their funds are transferred to the smart contract and a number of coins determined by our pricing curve are minted. And when the fan is ready to sell those coins, they are simply burned and funds are released from the smart contract according to the pricing curve. An important distinction between this Token Bonding Curve and an AMM like Uniswap is that this curve governs the entirety of the Creator Coin supply as opposed to creating a market for the subset of a token that individuals have chosen to include in the exchange pool.
+
+this approach offers the substantial benefit that we can deploy unique Creator Coins for each of our creators while providing immediate and continuous liquidity at an algorithmically determined price that isn’t subject to thresholds of demand required by an exchange or order book matching. 
+
+To understand how this works, let’s explore some transactions against a simple pricing curve. For the purposes of this example, we’ll assume some simple values that help illustrate some key concepts:
+
+Our example Creator Coin has the symbol CC.
+CC’s value is denominated in USD.
+CC’s pricing curve is a straight line beginning at $0 with a slope that increases price by $2 for every 100 CC minted. That is:
+
+![image](https://user-images.githubusercontent.com/99618142/206421493-2d61f191-f079-4ede-841f-d8ead91f32e1.png)
+
+While it may be initially counterintuitive to think of price increasing with quantity from a consumer perspective, keep in mind that this supply curve represents the perspective of our AMM as a producer. The more someone is interested in paying for CC, the more our AMM acting in accordance with this curve will be willing to supply.
+
+To get things started, let’s buy the first $100 of CC immediately after the coin is launched and its supply is zero. The contract walks up the pricing curve to determine the price of each new CC it mints until it has generated enough CC for the $100 purchase request. Or put another way, it advances to a point where the area under the curve is $100.
+
+![image](https://user-images.githubusercontent.com/99618142/206421648-7f579334-bb03-4e44-9b8d-9f08b7b1bc48.png)
+
+With the assumed pricing curve, this moves us to a supply of 100 CC. The purchaser receives 100 CC while $100 is added to the liquidity pool and the price of the last CC minted is now $2.
+
+The same operation effectively happens in reverse whenever we sell CC. If, for instance, we chose to now sell 50 CC, we would walk back down the curve to the point where supply equals 50 CC. The contract would burn the 50 CC supplied by the seller and release the associated liquidity. Specifically, we would now be at a supply of 50 CC, the price of the last CC minted is now $1, the contract would release $75 to the seller, and the remaining liquidity pool would be $25.
+
+
+![image](https://user-images.githubusercontent.com/99618142/206421757-0f477806-6393-4f0a-b035-180bec47b8ed.png)
+
+It’s important to note here that a key piece of our pricing curves working well is that there is no fractionalization of the liquidity pool. At all times, the liquidity pool is fully funded in accordance with the pricing curve. All funds used to purchase Creator Coins and all proceeds from sales of Creator Coins come and go directly from the liquidity pool as trades are executed with the automated market maker.
+
+While the simple linear pricing curve is helpful to illustrate functionality, it’s possible to begin designing for an economy with specific properties in mind by modifying the slope at various points along the curve. For I first cohort of creators, we’ve used our understanding of their existing economic interactions to inform a design captured in the following pricing curve.
+
+![image](https://user-images.githubusercontent.com/99618142/206430912-072f1c37-bb35-434c-b399-b3537e99a853.png)
+
+
+The initial segment of the curve labeled ‘A’ effectively represents a supply floor. Upon instantiation of a new Creator Coin, we mint the first 50,000 coins with a small amount of liquidity. These coins go to the corresponding creator and ensure that they have the ability to own a large percentage of the Creator Coin supply at all times, with the intention of motivating creators to behave in ways consistent with the long term value of their coin economy. While the continuous liquidity properties of the pricing curve hold for this segment, the price approaches zero very quickly and the associated liquidity pool is small.
+
+As we progress into section ‘B’, we start to gradually increase slope. At this stage, the liquidity pool begins to build, and leveraging the automated market maker to buy and sell quantities of Creator Coins without quickly dropping below the effective supply floor is now possible. Additionally, the gradual build of the liquidity pool creates an opportunity for early adopters to acquire a meaningful share of their favorite creator’s coins for a relatively modest price.
+
+Within segment ‘C’, we see our largest slope increases. We designed the curve with the intention of arriving in this segment when we start to see a similar amount of activity in the new tokenized economy that our first batch of creators were typically seeing on an annual basis in their existing economies. At this point, price and liquidity increase or decrease rapidly in response to demand and the relative volatility creates opportunities for interesting interactions around Creator Coins and the digital assets they support.
+
+Lastly, in segment ‘D’ we arrive at a leveling off of price increases and hit our effective supply cap of 210,000 coins. The price limitations at the high end of the curve should help discourage unchecked speculation and limit the coin supply to levels consistent with expectations around appropriate economic interactions between our initial cohort of creators and their fans.
+
+It is important to note here that alongside the design of the supply curve, a key determinant for price will always be the demand for a Creator Coin. While the pricing curve establishes a relationship between price and supply, it is the demand for the coin across its various use cases that will allow market forces to ultimately determine where on the curve we will be at any given time.
+
+
+##Soulbound NFT
+
+There will be a smart contract so that each user can mint their videos in NFT format (the purpose of this is to know the owner of the video - it is not possible to buy and sell video NFT - Note that these NFTs do not have the ability to buy and sell(Soulbound NFT))
+
+
+Hint: This idea is derived from the https://rally.io/ platform.
 
 
