@@ -146,6 +146,32 @@ It is important to note here that alongside the design of the supply curve, a ke
 
 There will be a smart contract so that each user can mint their videos in NFT format (the purpose of this is to know the owner of the video - it is not possible to buy and sell video NFT - Note that these NFTs do not have the ability to buy and sell(Soulbound NFT))
 
+==================================================================================================================================================
+
+
+##Concepts:
+
+Token Bonding Curves: A token bonding curve (TBC) is a pricing curve that establishes a functional relationship between the supply of a Coin and its current price. 
+
+Genesis Coins: The first coins minted for a given coin. These coins go to the corresponding creator and ensure that they have the ability to own a large percentage of their Coin supply at all times, with the intention of motivating creators to behave in ways consistent with the long term value of their Coin economy.
+
+
+Flow Controls: Flow controls govern the amount of coins that can be 1) converted (to $ّINA) and 2) transferred (to another user, transferring to a creator is excluded) after purchase. There are no flow controls on a fan sending a creator's coins to the creator.
+
+
+==================================================================================================================================================
+
+##Request items:
+
+1.Develop a token factory smart contract that creates a unique token for each user by receiving the symbol token name and the user's wallet address.
+
+2.Create a smart contract for the Creator Coins section that allows trading of each user's exclusive tokens with other users by Bonding Curve and AMM. (It is possible to use already developed smart contracts such as BancorBondingCurve) - Here there is a need for a liquidity pool and it is backed by INA tokens.
+Each user will be able to buy and sell tokens of other users with INA tokens. In fact, the INA token will be the main pair of other tokens (user token / INA).
+
+3.Develop a swap smart contract between users' tokens with INA so that it is only possible to withdraw money with swap tokens to INA token.
+
+4.create a smart contract so that each user can mint their videos in NFT format (the purpose of this is to know the owner of the video - it is not possible to buy and sell video NFT)
+
 
 Hint: This idea is derived from the https://rally.io/ platform.
 
