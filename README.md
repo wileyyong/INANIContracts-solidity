@@ -86,7 +86,8 @@ the goal of this part of technical assesment is accelerate economic interactions
 
 in this part smart contracts allow Creators to define and manage their own economies.
 
-#Creator Coins
+
+# Creator Coins:
 
 Creator Coin is a creator’s fully customizable, branded cryptocurrency that represents their unique digital brand. I have designed this system to balance two seemingly contradictory beliefs:
 
@@ -150,8 +151,8 @@ Lastly, in segment ‘D’ we arrive at a leveling off of price increases and hi
 It is important to note here that alongside the design of the supply curve, a key determinant for price will always be the demand for a Creator Coin. While the pricing curve establishes a relationship between price and supply, it is the demand for the coin across its various use cases that will allow market forces to ultimately determine where on the curve we will be at any given time.
 
 
-#Soulbound NFT
 
+# Soulbound NFT
 
 There will be a smart contract so that each user can mint their videos in NFT format (the purpose of this is to know the owner of the video - it is not possible to buy and sell video NFT - Note that these NFTs do not have the ability to buy and sell(Soulbound NFT))
 
@@ -159,8 +160,7 @@ There will be a smart contract so that each user can mint their videos in NFT fo
 ===================================================================================================
 
 
-
-#Concepts:
+# Concepts:
 
 
 Token Bonding Curves: A token bonding curve (TBC) is a pricing curve that establishes a functional relationship between the supply of a Coin and its current price. 
@@ -175,8 +175,7 @@ Flow Controls: Flow controls govern the amount of coins that can be 1) converted
 
 ===================================================================================================
 
-
-##Request items:
+# Request items:
 
 
 1.Develop a token factory smart contract that creates a unique token for each user by receiving the symbol token name and the user's wallet address.
