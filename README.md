@@ -128,3 +128,6 @@ The goal is for users to be able to buy and sell a percentage of each other's cr
 You can change the formula for calculating credit shares for each user. The goal is to identify the creativity and dynamism of your mind in the development process.
 
 
+## My Question
+1. do you need to use the fixed ratio between eth / usdt / matic for only demo?
+2. if not, do you need to use chainlink or oracle for getting real time ratio between above cryptos?
