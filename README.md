@@ -190,7 +190,3 @@ Each user will be able to buy and sell tokens of other users with INA tokens. In
 
 Hint: This idea is derived from the https://rally.io/ platform.
 
-
-## My Question
-1. do you need to use the fixed ratio between eth / usdt / matic for only demo?
-2. if not, do you need to use chainlink or oracle for getting real time ratio between above cryptos?
